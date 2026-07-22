@@ -1,3 +1,4 @@
+const css=document.createElement('link');css.rel='stylesheet';css.href='/v13-enhance.css';document.head.appendChild(css);
 const A={data:null};
 const originalFetch=window.fetch.bind(window);
 window.fetch=async(...args)=>{const r=await originalFetch(...args);try{const u=String(args[0]||'');if(u.includes('/api/search')){const clone=r.clone(),d=await clone.json();if(r.ok){A.data=d;setTimeout(()=>enhance(d),120)}}}catch{}return r};
