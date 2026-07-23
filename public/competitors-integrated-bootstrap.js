@@ -1,0 +1,1 @@
+fetch('/competitors-integrated.js').then(r=>r.text()).then(code=>{code=code.replace("((sector==='hospital_system'||sector==='health_plan')?.045:.08+(seed%10)/100)","((sector==='hospital_system'||sector==='health_plan') ? .045 : .08+(seed%10)/100)");(0,eval)(code)}).catch(e=>console.error('Competitor intelligence failed to load',e));
