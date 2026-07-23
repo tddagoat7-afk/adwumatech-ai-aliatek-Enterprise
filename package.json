@@ -1,11 +1,11 @@
 {
   "name": "adwumatech-ai-aliatek-enterprise",
-  "version": "12.0.0",
+  "version": "14.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "start": "node server-v14.js",
+    "dev": "node --watch server-v14.js"
   },
   "engines": { "node": ">=20" },
   "dependencies": {
